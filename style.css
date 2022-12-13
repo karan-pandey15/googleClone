@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  min-width: 400px;
+}
+
+.firstContainer {
+  height: 10vh;
+  width: 100vw;
+}
+
+section .firstContainer ul{
+    text-align: right;
+}
+.btn {
+  height: 35px;
+  width: 95px;
+  border: none;
+  background: #1a73e8;
+  font-size: 15px;
+  color: white;
+  border-radius: 4px;
+  margin: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #1b66c9;
+}
+.firstContainer ul li {
+  display: inline;
+  margin: 10px 10px;
+  font-size: 15px;
+}
+ul li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: rgba(0,0,0,.87);
+}
+
+.container1 {
+  height: 30vh;
+  width: 100vw;
+  text-align: center;
+}
+.googleImg {
+  height: calc(100% - 125px);
+  margin-top: 50px;
+}
+
+/* Input section style start here  */
+
+.inputSec {
+  height: 42px;
+  width: 580px;
+  border-radius: 20px;
+  border: 1px solid lightgray;
+}
+.inputSec:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+}
+.googleIcon {
+  border-radius: 50%;
+}
+.container2 {
+  margin: 20px;
+  height: 20vh;
+  width: 100vw;
+}
+
+.magnifier {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 40px;
+  top: 5px;
+}
+
+.FPdoLc {
+  margin: 30px 0;
+}
+.mic-icon {
+  width: 30px;
+  position: relative;
+  /* right: -20px; */
+  cursor: pointer;
+  left: -80px;
+  color: #3c4043;
+  top: 10px;
+}
+.firstBtn,.secondBtn  {
+  height: 30px;
+  width: 120px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 5px;
+  color: #3c4043;
+  border: 1px solid #f8f9fa;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  padding: 0 12px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.firstBtn:hover,.secondBtn:hover{
+    background: white;
+    border: 1px  solid lightgray;
+} 
+
+
+.seracthere {
+  width: 25px;
+  margin: 2px 10px;
+  position: relative;
+  /* right: -20px; */
+  left: -80px;
+  color: #3c4043;
+  top: 10px;
+  cursor: pointer;
+}
+
+.lang {
+  text-align: center;
+  height: 10vh;
+  width: 100vw;
+  color: gray;
+}
+.lang span {
+  color: #1a0dab;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* FOOTER style start here  */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+.footer ul li {
+  display: inline;
+  font-size: 16px;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #70757a;
+  margin: 20px 20px;
+}
+.singleCom {
+  padding: 15px;
+  width: 100vw;
+  background: #f2f2f2;
+}
+.secondElem {
+  margin: 0 30px;
+}
+.singleCom li {
+  list-style: none;
+  margin: 0 15px;
+  color: #70757a;
+}
+.multicomp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 14px;
+  width: 100vw;
+  background: #f2f2f2;
+  border-top: 1px solid rgb(205, 196, 196);
+  text-align: center;
+}
+
+/* 
+      This site is not phone responsive i am
+       also able to create responsive site
+       but i think for demo purpose it is okay 
+
+*/
+      
+
+/* Responsive code style start here  */
+
+@media (max-width: 750px) {
+  .multicomp {
+    display: flex;
+    justify-content: center;
+  }
+  .multicomp ul {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 600px) {
+  .inputSec {
+    height: 45px;
+    width: 440px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+  }
+  .seracthere {
+    display: none;
+  }
+  .lang span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .multicomp {
+    display: flex;
+    justify-content: center;
+  }
+  .multicomp ul {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .inputSec {
+    height: 40px;
+    width: 380px;
+  }
+  .mic-icon {
+    display: none;
+  }
+  .magnifier {
+    display: none;
+  }
+}
+      
